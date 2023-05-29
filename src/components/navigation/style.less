@@ -1,0 +1,39 @@
+@import "@variables";
+
+.nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: @green-text;
+
+  &__bar {
+    display: flex;
+    align-items: center;
+    gap: 45px;
+    list-style-type: none;
+  }
+
+  &__btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    button {
+      //   color: @green-text;
+      padding: 10px 25px;
+      border-radius: @round-4;
+      border: 1px solid @green-text;
+      cursor: pointer;
+    }
+
+    &--secondary {
+      color: @green-text;
+    }
+
+    &--primary {
+      background-color: @green-text;
+      color: @white-text;
+    }
+  }
+}

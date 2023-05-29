@@ -1,0 +1,36 @@
+---
+import Navigation from "../navigation/index.astro";
+import "./style.less";
+import HeroImg1 from "@imgs/hero-img-1.png";
+import HeroImg2 from "@imgs/hero-img-2.png";
+import HeroImg3 from "@imgs/hero-img-3.png";
+import HeroImg4 from "@imgs/hero-img-4.png";
+---
+
+<div class="hero">
+  <Navigation />
+  <div class="hero__content">
+    <div class="hero__content__tags">
+      <span>Dialect brings</span>
+      <span>language</span>
+      <span>learning</span>
+    </div>
+    <div class="hero__content__text">
+      <span
+        >Learn a language right here with hundreds of free language-learning
+        lessons. Get access to compact lessons from the experts and connect with
+        a community of native speakers to help you master words faster.</span
+      >
+    </div>
+    <div class="hero__content__btn">
+      <select name="lang">
+        <option value="Spanish">Spanish</option>
+      </select>
+      <button>Start Learning</button>
+    </div>
+  </div>
+  <img class="hero__img hero__img--1" src={HeroImg1} alt="hero-img-1" />
+  <img class="hero__img hero__img--2" src={HeroImg2} alt="hero-img-2" />
+  <img class="hero__img hero__img--3" src={HeroImg3} alt="hero-img-3" />
+  <img class="hero__img hero__img--4" src={HeroImg4} alt="hero-img-4" />
+</div>
