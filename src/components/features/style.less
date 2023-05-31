@@ -1,0 +1,73 @@
+@import "@variables";
+
+.features {
+  margin: 0 135px;
+
+  &__1 {
+    h1 {
+      text-align: center;
+
+      span {
+        color: @bg-green;
+      }
+    }
+
+    &__list {
+      margin-top: 70px;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 30px;
+
+      &__item {
+        background-color: @bg-yellow-sm;
+        flex: 1 1 370px;
+        padding: 42px 22px;
+        border-radius: @round-12;
+        display: flex;
+        flex-flow: row wrap;
+        gap: 30px;
+
+        p {
+          color: @gray-text;
+
+          strong {
+            color: @green-text;
+          }
+        }
+      }
+    }
+  }
+
+  &__2 {
+    margin: 170px 0;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: 130px;
+
+      &__text {
+        h1 {
+          font-size: 46px;
+          color: @green-text;
+
+          span {
+            color: @bg-green;
+          }
+        }
+
+        p {
+          color: @gray-text;
+        }
+
+        button {
+          margin-top: 30px;
+          border: none;
+          border-radius: @round-6;
+          background-color: @bg-yellow;
+          padding: 15px 35px;
+        }
+      }
+    }
+  }
+}
