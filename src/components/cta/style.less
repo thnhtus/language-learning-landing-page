@@ -1,0 +1,59 @@
+@import "@variables";
+
+.cta {
+  display: flex;
+  align-items: center;
+  padding: 100px 135px;
+  gap: 130px;
+  background-color: @bg-green;
+
+  &__tags {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 20px;
+
+    span {
+      padding: 16px 38px;
+      background-color: @bg-white;
+      border-radius: @round-12;
+      font-size: 46px;
+      color: @green-text;
+
+      &:nth-child(2) {
+        background-color: @bg-yellow;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-flow: column wrap;
+    gap: 40px;
+
+    p {
+      margin: 0;
+      color: @green-text;
+    }
+
+    &__btn {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      select,
+      button {
+        padding: 15px 35px;
+        border-radius: @round-6;
+        border: none;
+        color: @green-text;
+      }
+
+      button {
+        background-color: @green-text;
+        color: @white-text;
+      }
+    }
+  }
+}
