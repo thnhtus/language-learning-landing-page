@@ -10,12 +10,20 @@
   background-size: cover;
   position: relative;
 
+  @media screen and (max-width: 768px) {
+    padding: 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 20px;
+  }
+
   &__content {
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
 
     &__tags {
       max-width: 830px;
@@ -24,6 +32,7 @@
       align-items: center;
       justify-content: center;
       gap: 20px;
+      z-index: 100;
 
       span {
         color: @green-text;
@@ -38,6 +47,14 @@
           background-color: @bg-yellow;
           font-weight: 700;
         }
+
+        @media screen and (max-width: 768px) {
+          font-size: 32px;
+        }
+
+        @media screen and (max-width: 1024px) {
+          font-size: 42px;
+        }
       }
     }
 
@@ -45,6 +62,15 @@
       max-width: 530px;
       text-align: center;
       padding: 30px 150px;
+      z-index: 100;
+
+      @media screen and (max-width: 768px) {
+        padding: 30px 0;
+      }
+
+      @media screen and (max-width: 1024px) {
+        padding: 30px 0;
+      }
     }
 
     &__btn {
@@ -52,6 +78,7 @@
       display: flex;
       justify-content: center;
       gap: 20px;
+      z-index: 100;
 
       select,
       button {
@@ -73,21 +100,41 @@
     &--1 {
       top: 170px;
       left: 210px;
+
+      @media screen and (max-width: 768px) {
+        top: 100px;
+        left: 20px;
+      }
     }
 
     &--2 {
       top: 315px;
       right: 85px;
+
+      @media screen and (max-width: 768px) {
+        top: 200px;
+        right: 0;
+      }
     }
 
     &--3 {
       left: 190px;
       bottom: 95px;
+
+      @media screen and (max-width: 768px) {
+        left: 20px;
+        bottom: 20px;
+      }
     }
 
     &--4 {
       right: 235px;
       bottom: 60px;
+
+      @media screen and (max-width: 768px) {
+        right: 30px;
+        bottom: 30px;
+      }
     }
   }
 }

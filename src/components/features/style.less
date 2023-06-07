@@ -3,6 +3,14 @@
 .features {
   margin: 0 135px;
 
+  @media screen and (max-width: 768px) {
+    margin: 0 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin: 0 20px;
+  }
+
   &__1 {
     h1 {
       text-align: center;
@@ -41,10 +49,34 @@
   &__2 {
     margin: 170px 0;
 
+    @media screen and (max-width: 768px) {
+      margin: 70px 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      margin: 70px 0;
+    }
+
     &__content {
       display: flex;
       align-items: center;
       gap: 130px;
+      flex-flow: row nowrap;
+
+      @media screen and (max-width: 768px) {
+        flex-flow: row wrap;
+        gap: 50px;
+
+        img {
+          width: 100%;
+          height: auto;
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        flex-flow: row wrap;
+        justify-content: center;
+      }
 
       &__text {
         h1 {

@@ -3,9 +3,20 @@
 .cta {
   display: flex;
   align-items: center;
+  flex-flow: row wrap;
   padding: 100px 135px;
   gap: 130px;
   background-color: @bg-green;
+
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+    gap: 40px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 50px 20px;
+    gap: 70px;
+  }
 
   &__tags {
     flex: 1 1 auto;
@@ -13,12 +24,21 @@
     flex-flow: row wrap;
     gap: 20px;
 
+    @media screen and (max-width: 768px) {
+      justify-content: center;
+    }
+
     span {
       padding: 16px 38px;
       background-color: @bg-white;
       border-radius: @round-12;
       font-size: 46px;
       color: @green-text;
+
+      @media screen and (max-width: 768px) {
+        font-size: 32px;
+        padding: 16px 20px;
+      }
 
       &:nth-child(2) {
         background-color: @bg-yellow;
@@ -41,6 +61,10 @@
       display: flex;
       align-items: center;
       gap: 20px;
+
+      @media screen and (max-width: 768px) {
+        justify-content: center;
+      }
 
       select,
       button {

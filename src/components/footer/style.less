@@ -39,9 +39,19 @@
   &__2 {
     display: flex;
     align-items: flex-start;
+    flex-flow: row wrap;
     justify-content: center;
     gap: 100px;
     padding: 55px 0;
+
+    @media screen and (max-width: 768px) {
+      padding: 55px 20px;
+      gap: 50px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 55px 20px;
+    }
 
     &__col {
       span {
@@ -65,8 +75,16 @@
 
   &__3 {
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     padding: 30px 310px;
+
+    @media screen and (max-width: 768px) {
+      padding: 20px;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 20px;
+    }
 
     h1 {
       font-size: 22px;
@@ -77,6 +95,7 @@
     &__language {
       display: flex;
       align-items: center;
+      flex-flow: row wrap;
       gap: 20px;
       color: @gray-text;
     }

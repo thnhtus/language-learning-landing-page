@@ -8,6 +8,14 @@
   padding: 100px 0;
   background-color: @bg-yellow-sm;
 
+  @media screen and (max-width: 768px) {
+    padding: 50px 20px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    padding: 50px 20px;
+  }
+
   &__header {
     text-align: center;
 
@@ -33,6 +41,14 @@
     flex-flow: row wrap;
     padding: 0 135px;
     gap: 30px;
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+
+    @media screen and (max-width: 1024px) {
+      padding: 0;
+    }
 
     &__item {
       flex: 1 1 370px;

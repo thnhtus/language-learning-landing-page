@@ -9,6 +9,12 @@
   flex-flow: row wrap;
   gap: 50px;
 
+  @media screen and (max-width: 768px) {
+    padding: 50px 0;
+    flex-flow: column nowrap;
+    text-align: center;
+  }
+
   span {
     color: @green-text;
     font-size: 36px;
